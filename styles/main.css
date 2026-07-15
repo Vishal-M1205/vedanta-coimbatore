@@ -3,7 +3,10 @@
 
 *{
     font-family: 'Open Sans';
+ 
 }
+
+
 
 .bg-light-orange{
     background-color: #FCBA64;
@@ -93,8 +96,12 @@
 }
 
 .f-30{
-    font-size: 28px;
+    font-size: 27px;
     
+}
+
+.border-radius-video{
+    height: fit-content;
 }
 
 .f-24{
@@ -122,6 +129,11 @@
 
 .house-carousel-wrap,.retirement-carousel-wrap,.resident-carousel-wrap{
     height: fit-content;
+}
+
+
+.fs-small{
+    font-size: 10px;
 }
 
 .house-carousel img{
@@ -173,6 +185,36 @@
 
 .foot-link:hover{
     color:white
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.nav-item:hover, .nav-item a:hover{
+    cursor: pointer ;
+    color: rgb(251, 51, 51) !important;
+    transition: all 0.5s;
+}
+
+.border-striped{
+    border-bottom : dashed 1px rgba(128, 128, 128, 0.425)
+}
+
+.blink{
+  animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 @media (min-width:760px) and (max-width:992px   ) {
