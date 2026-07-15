@@ -159,7 +159,16 @@
 }
 
 .slick-next:before,.slick-prev::before{
-    color: #7EA170;
+    color: #ffffff;
+    padding: 5px 5px 5px 5px;
+    background-color: #7EA170;
+    font-weight: bolder;
+}
+.slick-next:before{
+    content: ">";
+}
+.slick-prev:before{
+    content: "<";
 }
 
 .bg-pale-green{

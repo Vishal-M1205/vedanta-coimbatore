@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+ 
   
     $('.house-carousel').slick({
         infinite: true,
@@ -91,7 +93,45 @@ $(document).ready(function(){
   ]
     })
 
+
+      
+
 })
+
+ $('#vedaForm').validate({
+        errorClass : 'text-danger fs-small mt-2',
+        rules:{
+            name: {
+
+                required:true
+            },
+            phone: {
+
+                required:true,
+                digits:true
+            },
+            email: {
+
+                required:true,
+                email:true
+            },
+            interest:{
+                required:true
+            },
+            message:{
+                required:true
+            },
+            terms:{
+                required:true
+            },
+
+        },
+
+    })
+
+    $('#submitBtn').on('submit',(e)=>{
+        e.preventDefault();
+    })
 
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
